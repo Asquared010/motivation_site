@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/styles.css' %}">
+    <title>Study Tips</title>
+</head>
+<body>
+    <h1>Study Tips</h1>
+
+    <ul>
+        {% for tip in tips %}
+            <li>{{ tip }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Go Back Home</a>
+</body>
+</html>

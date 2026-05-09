@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main/styles.css' %}">
+    <title>Student Motivation App</title>
+</head>
+<body>
+    <h1>Welcome to the Student Motivation App</h1>
+
+    <form action="/result/" method="get">
+        <label>Enter your name:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <label>Enter your study goal:</label><br>
+        <input type="text" name="goal"><br><br>
+
+        <button type="submit">Get Motivation</button>
+    </form>
+
+    <br>
+    <a href="/tips/">View Study Tips</a>
+</body>
+</html>
