@@ -11,7 +11,7 @@ http://127.0.0.1:8000
 
 The purpose of this software is to practice building dynamic web applications using Python Django, including handling user input, routing between pages, and rendering dynamic content.
 
-[Software Demo Video](https://your-youtube-link-here)
+[Software Demo Video](https://www.loom.com/share/d81a6d5eb38749e982a215c3b4bdecdc)
 
 ---
 
