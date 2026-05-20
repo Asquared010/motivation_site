@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Motivation App</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<header>
+    <h1>Motivation Tracker</h1>
+</header>
+
+<div class="container">
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+        <br><br>
+
+        <textarea name="message" placeholder="Enter your motivation or goal" required></textarea>
+
+        <br><br>
+
+        <button type="submit">Save Motivation</button>
+    </form>
+
+    <br>
+
+    <a href="/list/">View Saved Motivations</a>
+
+</div>
+
+</body>
+</html>
